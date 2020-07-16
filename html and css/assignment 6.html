@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2020 by anonymous (http://jsbin.com/cememileqa/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+#main-body{
+  background-color:teal;
+}
+
+
+.dish{
+  padding-bottom:30px;
+  font-weight:bold;
+  text-decoration: underline;
+  font-size: 50px;
+  text-align:center;
+ 
+}
+   
+.ingredients {
+ list-style: none;
+ }
+
+
+.ingredients li:before {
+content: "✏️";
+padding-right: 10px;
+}
+
+
+ .steps {
+  list-style-type: upper-roman;
+ }
+
+ p{
+        font-style: italic;
+ }
+
+ .list-group section {
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px 5px;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+ }
+
+ #list-ingredients {
+   width: 350px;
+   background-color: pink;
+ }
+
+ #list-steps {
+   width: 350px;
+   background-color:#123456;
+ }
+
+
+@media only screen and (max-width: 400px) {
+   .list-group {
+    width: 100%;
+ }
+
+.list-group section {
+    color: black;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+ }
+  
+ #list-steps, #list-ingredients {
+  background-color:grey;
+  }
+
+ .recipe-photo {
+  border-radius: 0;
+  max-width: 100%;
+  width: 100%;
+  border: 0;
+ }
+
+  @media only screen and (min-width: 401px) and (max-width: 750px) {
+  #main-body{
+    background-color: white;
+    margin: 0 20px;
+    }
+  }
+
+  @media only screen and (min-width: 750px) {
+   #main-body {
+   margin: 0 200px;
+  }
+ }
+
+
+
+
+
+
+
+</style>
+</head>
+<body id="main-body">
+<h1 class="dish">PIZZA..</h1>
+    <p>How to make <strong>PIZZA</strong>?</p>
+  <P><strong>LIST OF INGREDIENTS REQUIRED TO MAKE PIZZA</strong></P>
+  <!--Quantity of Ingredients may vary depending on number of people,   -->
+  <div class="list-group">
+    <section  id="list-ingredients">
+  <ul class="ingredients">
+    <li>1 cup all purpose flour</li>
+    <li>50 mililitre tomato ketch up</li>
+    <li>1/2 tomato</li>
+    <li>1 onion</li>
+    <li>1/2 teaspoon chilli flakes</li>
+    <li>1/2 teaspoon sugar</li>
+    <li>4 tablespoon processed cheese </li>
+    <li>2 mushroom</li>
+     <li>1/4 capsicum</li>
+     <li>1/2 teaspoon oregmo</li>
+    <li>1/4 cup mozzarella</li>
+     <li>1/2 tablespoon dry yeast</li>
+     <li>water as required</li>
+    <!--This ingredients is according to one person-->
+  </ul>
+
+ </section>
+  
+<section id="list-steps">
+ <strong>STEPS TO MAKE PIZZA</strong>
+  
+  <ol class="steps">
+     <li>Prepare the pizza dough</li>
+     <li>prepare the pizza base</li>
+    <!--These steps can be reduced if you have ready mate base-->
+     <ul>
+      <li> Preheat the oven at 180 <i>degree</i> celcius </li>
+       <li>Put the pizza base in preheated oven </li>
+       <li>And bake it for 10 minutes</li>
+     
+     </ul>
+     <li>Chop all the vegetables for the pizza</li>
+      <li>Spread the sauce and veggies on the base </li>
+     <li>Bake the pizza at 250 <i>degree</i> celsius for 10 minutes</li>
+     <li>Once done,take out the baking tray and slice the pizza </li>
+     <li>Sprinkle oregano and chiili flakes ass per your taste and serve <strong>HOT .</stong></li>
+  </ol>
+ </section>
+  </div>
+  <img src="https://images.pexels.com/photos/2147491/pexels-photo-2147491.jpeg?cs=srgb&dl=top-view-photo-of-baked-pizza-2147491.jpg&fm=jpg " alt="home made pizza" class="recipe-photo"/>
+     <p class="text-content">YOUR <strong>PIZZA IS READY</strong>
+  <br><i>YOU ARE READY TO EAT OR SERVE THE DELICIOUS,CRUCHIER PIZZA.THE AROMA OF PIZZA IS FASINATING YOU<i></p>
+<!-- website resource:-https://www.w3schools.com/css/ -->
+</body>
+</html>
